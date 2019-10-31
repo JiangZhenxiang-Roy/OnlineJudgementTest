@@ -23,8 +23,8 @@ int main(){
     int temp;
     for (m=n;m>0;m--) {
         for (i = 0; i < m-1; i++) {
-            if (x[i] > x[i + 1]) {
-                temp = x[i];
+            if (a[i] > a[i + 1]) {
+                temp = a[i];
                 a[i] = a[i + 1];
                 a[i + 1] = temp;
                 temp = c[i];
