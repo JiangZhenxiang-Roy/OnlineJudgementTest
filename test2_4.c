@@ -20,7 +20,7 @@ int main(){
     }
 
     //The highest average in a
-    int temp;
+    float temp;
     for (m=n;m>0;m--) {
         for (i = 0; i < m-1; i++) {
             if (a[i] > a[i + 1]) {
