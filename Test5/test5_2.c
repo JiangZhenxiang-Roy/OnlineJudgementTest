@@ -1,7 +1,34 @@
-//未满分18/20
+#include <stdio.h>
+int main(){
+    int n;
+    scanf("%d",&n);
+    for (int i=0;i<n;i++){
+        int num;
+        scanf("%d",&num);
+        for (int j=2;j<=num;j++){
+            if (num%j==0){
+                printf("%d",j);
+                num=num/j;
+                if (num!=1){
+                    printf("*");
+                }
+                j=1;
+            }
+        }
+        printf("\n");
+    }
+    return 0;
+}
+
+
+
+
+
+
+/*//未满分18/20
 
 #include <stdio.h>
-/*int prime(){
+int prime(){
     int i,count=0;
     for (i=2;i<=10000;i++){
         int temp=1;
@@ -16,7 +43,7 @@
         }
     }
     num=count+1;
-}*/
+}
 
 int main(){
 //    prime();
@@ -47,4 +74,4 @@ int main(){
         printf("\n");
     }
     return 0;
-}
+}*/
