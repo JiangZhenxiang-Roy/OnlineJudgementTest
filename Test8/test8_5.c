@@ -59,12 +59,21 @@ int main(){
             }
             j=j+len-1;
         }
+        else if (str [j]==48){
+            int len=1;
+            while (str[j+len]>=48&&str[j+len]<=57) {
+                len++;
+            }
+            j=j+len-1;
+        }
+        else
+            continue;
     }
     sort_list(save,m);
     long show_num[1000]={};
     int time[1000]={};
     int l=0;
-    for (int i=0;i<m;i++){
+    for (i=0;i<m;i++){
         show_num[l]=save[i];
         int t=1;
         while (save[i]==save[i+t]){
@@ -75,7 +84,7 @@ int main(){
         i=i+t-1;
     }
     if (l==0){
-        printf("None");
+        printf("None\n");
         return 0;
     }
     for (int j=l-1;j>0;j--){
