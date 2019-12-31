@@ -5,15 +5,12 @@ int main(){
     char get[100][101];
     scanf("%d %d",&n,&m);
     for (int i=0;i<n;i++) {
-        if (i + m < n) {
+        if (i + m < n)
             scanf("%s", get[i+m]);
-        }
-        else {
+        else
             scanf("%s",get[i+m-n]);
-        }
     }
-    for (int i=0;i<n;i++){
+    for (int i=0;i<n;i++)
         printf("%s ",get[i]);
-    }
     return 0;
 }
